@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+
+
         body{
             margin:0;
         }
@@ -14,6 +17,8 @@
             font-size: 5px;
         }
         */
+
+        /*
         .forma1{
             background-color: red;
             width: 100vw;
@@ -29,14 +34,161 @@
             font-size: 16px;
             color: white;
         }
+            */
+            
+        .forma1{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            
+
+            /*
+            padding-top: 125px;
+            padding-bottom: 125px;
+            padding-left: 125px;
+            padding-right: 125px;
+            border-top: 125px;
+            */
+
+            /*funciona en sentido horario*/
+            padding: 125px 50px 25px 75px;
+            border-top: 15px solid orange;
+            border-right: 20px solid orange;
+            border: 12px solid yellow;
+            margin: 25px;
+        }
+        .forma2{
+            width: 250px;
+            height: 250px;
+            background-color: green;
+        }
+        
+
+            
+        /*span es elemento de linea , no es elemento de caja 
+        con lo que no toma en cuenta el width y el height*/
+        .span1{
+            background-color: blue;
+            padding: 10px;
+        }
+        .span2{
+            background-color: green;
+        }        
+
+
+
+
+
+.contenedor{
+    background-color: rgba(122,123,123, 0.2);
+}
+.uno1{
+    background-color: rgba(234,3,5,0.2);
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.dos1{
+    background-color: rgba(2,234,5,0.2);
+    border: 5px solid green;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.tres1{
+    background-color: rgba(4,3,234,0.2);
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+    body{
+        margin:0;
+    }
+    .uno2{
+        background-color: red ;
+        width: 49%;
+        display:inline-block;
+    }
+    .dos2{
+        background-color: green ;
+        width: 49%;
+        display:inline-block;
+    }
+    .tres2{
+        background-color: orange ;
+        display:inline-block;
+    }
+    .cuatro2{
+        background-color: yellow;
+        display: block;
+    }
+
+    *{
+        /*box-sizing: content-box;*/
+        box-sizing: border-box; /*medidas por bordes y no por contenido*/
+        margin: 0px; /* establece reglas , que normaliza el comportamiento , deshaciendo las que son causadas los navegadores */
+    }
+    .contenedor3{
+        display:flex;
+        background-color: orange;
+        padding: 25px;
+    }
+    
+    .uno3{
+        background-color: green;
+        padding: 25px;
+    }
+    .dos3{
+        background-color: yellow;
+        padding: 35px;
+    }
+
     </style>
 </head>
 <body>
     <div class="forma1">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic tempore quo, laudantium itaque doloremque sed magni voluptates quae neque facere, alias harum? Quibusdam, accusantium commodi nostrum debitis ut dignissimos molestias.
+        Lorem ipsum dolor, sit amet consectetur 
     </div>
+    <span class="span1">
+        HOLA MUNDO 
+    </span>
+    <span class="span2">
+        ADIOS MUNDO 
+    </span>
+
     <div class="forma2">
-        Lorem ipsum dolokokokor sit ahoihoihojmet consectetur adipisicing elit. Autem, dolorum nostrum! Animi suscipit soluta nostrum obcaecati maxime fugit, aut eos placeat sit reiciendis voluptatibus minima harum dolore architecto corporis sapiente!
+        Lorem ipsum dolokokokor sit ahoihoihojmet
+    </div>
+
+    <div class="contenedor">
+        <div class="uno1">Contenido 1</div>
+        <div class="dos1">Contenido 2</div>
+        <div class="tres1">Contenido 3</div>
+
+        <span class="cuatro1">Contenido 4</span>
+    </div>
+
+    <div class="contenedor">
+        <div class="uno2">Contenido 1</div>
+        <div class="dos2">Contenido 2</div>
+        <div class="tres2">Contenido 3</div>
+
+        <span class="cuatro2">Contenido 4</span>
+    </div>
+
+
+    <div class="contenedor">
+        <div class="uno3">Contenido 1</div>
+        <div class="dos3">Contenido 2</div>
+        <div class="tres3">Contenido 3</div>
+
+        <span class="cuatro3">Contenido 4</span>
+    </div>
+
+    <div class="contenedor3">
+        <div class="uno3">Contenido 1</div>
+        <div class="dos3">Contenido 2</div>
     </div>
 
 </body>
